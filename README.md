@@ -1,1 +1,6 @@
 # Crop-Disease-Detection-usingFederated-Learning-
+This project uses federated learning framework for multi-crop disease detection that addresses key challenges in agricultural AI: data privacy, non-IID data distributions, and edge deployment constraints. The authors propose a hybrid CNN-Transformer architecture, combining EfficientNet-B0 or MobileNetV2 backbones with MobileViT blocks and attention mechanisms (CBAM and ESA), to balance local feature extraction with global context modeling. A novel dynamic weighted aggregation strategy is introduced, which prioritizes clients with expertise in underperforming disease classes, improving model robustness—especially for rare diseases.
+
+Experiments on PlantVillage and CCMT datasets show state-of-the-art results, with the EfficientNet-B0 hybrid achieving 99.43% and 92.43% accuracy, respectively, while maintaining low computational costs. The MobileNetV2 variant requires only 7.63 MB and processes images in 41.2 ms, making it suitable for real-time edge deployment. This work demonstrates a practical, privacy-preserving, and scalable solution for intelligent crop monitoring in distributed agricultural settings.
+
+<img width="1583" height="879" alt="model_architecture_new" src="https://github.com/user-attachments/assets/372b9a73-1ef8-4601-ba9d-f32f2b544531" />
